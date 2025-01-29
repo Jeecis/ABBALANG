@@ -2,6 +2,8 @@
 
 Written in EBNF and compiled/tested using https://mdkrajnak.github.io/ebnftest/
 
+See the testdata in test_data.txt
+
 ### Single letter variables, 
 `Gimme! Gimme! Gimme! someMusic = "a"`
 equivalent to

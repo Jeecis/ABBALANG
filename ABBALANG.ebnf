@@ -1,7 +1,6 @@
 (*Jēkabs Čudars 231RDB342*)
 (* Asked chatGPT how do I write grammar in ebnf and pasted the README file requirements, and it gave me a good template, which I modified*)
-(* Letters and digits *)
-
+(* Checked how Pascal was written https://en.wikipedia.org/wiki/Extended_Backus%E2%80%93Naur_form and took some inspiration from there*)
 program = "Jēkabs_Čudars_342", "\n" , "Waterloo "  package_name, "\n" , { (statement | "\n") } , "Thank you for the music!" ;
 
 (* Package Name *)
