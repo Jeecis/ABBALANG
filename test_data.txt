@@ -1,0 +1,49 @@
+Jēkabs_Čudars_342
+Waterloo ABBALANG
+
+Gimme! Gimme! Gimme! someMusic = "a"
+
+Gimme! Gimme! Gimme! bjorn = 12345678
+
+Gimme! Gimme! Gimme! benny = bjorn
+
+benny = 123+234
+
+Gimme! Gimme! Gimme! benny123 = "bjorn567"
+
+Super Trouper(benny>bjorn){
+bjorn = bjorn+1
+}
+
+Gimme! Gimme! Gimme! dance = false
+Gimme! Gimme! Gimme! sing = false
+Gimme! Gimme! Gimme! life = false
+
+You can(dance==false){
+dance = true
+}Or you can(sing==false){
+sing = true
+}Or you can(sing==true){
+sing = false
+}having the time of your{
+life = true
+}
+
+Mama mia (y){
+here I go again (1){
+Gimme! Gimme! Gimme! val = 10
+}here I go again (2){
+Gimme! Gimme! Gimme! val = 20
+}here I go again (3){
+Gimme! Gimme! Gimme! val = 30
+}My my how can I resist you {
+Gimme! Gimme! Gimme! val = 2
+}}
+
+Gimme! Gimme! Gimme! val = [1,2,3]
+
+Take a chance on yourself(vicotry){
+return victory
+}
+
+Thank you for the music!

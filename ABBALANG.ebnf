@@ -1,0 +1,68 @@
+(*Jēkabs Čudars 231RDB342*)
+(* Asked chatGPT how do I write grammar in ebnf and pasted the README file requirements, and it gave me a good template, which I modified*)
+(* Letters and digits *)
+
+program = "Jēkabs_Čudars_342", "\n" , "Waterloo "  package_name, "\n" , { (statement | "\n") } , "Thank you for the music!" ;
+
+(* Package Name *)
+package_name = letter , { letter | digit | "_" } ;
+
+letter = "A" | "B" | "C" | "D" | "E" | "F" | "G"
+       | "H" | "I" | "J" | "K" | "L" | "M" | "N"
+       | "O" | "P" | "Q" | "R" | "S" | "T" | "U"
+       | "V" | "W" | "X" | "Y" | "Z" | "a" | "b"
+       | "c" | "d" | "e" | "f" | "g" | "h" | "i"
+       | "j" | "k" | "l" | "m" | "n" | "o" | "p"
+       | "q" | "r" | "s" | "t" | "u" | "v" | "w"
+       | "x" | "y" | "z" ;
+
+digit = "0" | "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+non_zero_digit = "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" ;
+
+(* Single letter variables *)
+variable = letter ;
+
+(* Numbers *)
+number = non_zero_digit , { digit } ;
+
+(* Arithmetic *)
+arithmetic = expression , operator , expression ;
+expression = number | variable | long_variable ;
+operator = "+" | "-" | "*" | "/" ;
+
+(* Variables with unlimited length alphanumerics *)
+long_variable = letter , { letter | digit } ;
+
+(* Assignment *)
+string = "\"" , { letter | digit | " " } , "\"" ;
+assignment = "Gimme! Gimme! Gimme! ", long_variable , " = " , ( number | variable | expression | array | string | long_variable) ;
+valueAssignment = long_variable, " = ", (number | variable | expression | array | string | long_variable | arithmetic) ;
+
+(* Loops *)
+loop = "Super Trouper" , "(" , condition , ")" , "{\n" , { statement } , "}" ;
+
+(* Conditionals *)
+conditional = "You can" , "(" , condition , ")" , "{\n" , { statement } , "}" ,
+                       { "Or you can" , "(" , condition , ")" , "{\n" , { statement } , "}" } ,
+                       [ "having the time of your" , "{\n" , { statement } , "}" , "\n" ] ;
+
+(* Switch statement *)
+switch = "Mama mia " , "(" , variable , ")" , "{\n" ,
+         { "here I go again " , "(" , value , ")" , "{\n" , { statement } , "}" } ,
+         "My my how can I resist you " , "{\n" , { statement } , "}" , "}" ;
+
+(* Arrays *)
+array = "[" , { value , [ "," ] } , "]" ;
+value = number | variable ;
+
+(* Functions *)
+function = "Take a chance on " , long_variable , "(" , [ parameters ] , ")" , "{\n" , { statement } , return "}" ;
+return = "return " , ( number | variable | expression | array | "" ), "\n" ;
+parameters = long_variable , { "," , long_variable } ;
+
+(* Condition *)
+condition = expression , comparison , expression ;
+comparison = "==" | "!=" | "<" | ">" | "<=" | ">=" ;
+
+(* Statement *)
+statement = (assignment | arithmetic | loop | conditional | switch | function | valueAssignment), "\n" ;
