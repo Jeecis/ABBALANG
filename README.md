@@ -2,7 +2,7 @@
 
 Written in EBNF and compiled/tested using https://mdkrajnak.github.io/ebnftest/
 
-See the testdata in test_data.txt
+See the testdata in test_data.txt, and the analog translation of it main.go file. The following examples of ABBALANG have been inspired from golang.
 
 ### Single letter variables, 
 `Gimme! Gimme! Gimme! someMusic = "a"`

@@ -1,5 +1,6 @@
 package main
 
+//Asked copilot to generate an equivalent code for the given code ABBALANG ebnf
 func yourself(victory interface{}) interface{} {
 	return victory
 }
